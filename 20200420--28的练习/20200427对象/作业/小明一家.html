@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		/*小明家里有三个人，爸爸和妈妈，
+		小明是男的，今年18岁，兴趣爱好是打篮球和读书，
+		爸爸是软件程序员，妈妈是UI设计师，小明家在深圳南山有一套100平方的房子，
+		户型是三房一厅，今年小明家刚买了一辆特斯拉Model3.*/
+		//小明
+		let xiaoming= new Object();
+		xiaoming.age="18";
+		xiaoming.sex="男";
+		xiaoming.hobby="打篮球和读书";
+		//console.log(xiaoming)
+		//爸爸
+		let father=new Object();
+		father.job="软件程序员";
+		
+		//妈妈
+		let mother=new Object();
+		mother.job="UI工程师"
+		
+		//车
+		let car=new Object();
+		car.model="特拉斯";
+		
+		//房子
+		let house= new Object();
+		house.size="100平";
+		house.type="三房一厅";
+		house.address="深圳南山区"
+		
+		for(let key in xiaoming){
+			console.log(key,":",xiaoming[key]);
+		}
+		
+		for(let key in father){
+			console.log(key,":",father[key]);
+		}
+		
+		for(let key in mother){
+			console.log(key,":",mother[key]);
+		}
+		
+		for(let key in car){
+			console.log(key,":",car[key]);
+		}
+		
+		for(let key in house){
+			console.log(key,":",house[key]);
+		}
+		
+		
+		
+	</script>
+</html>

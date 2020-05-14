@@ -1,0 +1,572 @@
+<html>
+      <head>
+	        <title></title>
+			<style>
+			*{margin:0px;padding:0px;font-size:12px;color:#000;font-family:宋体;}
+			a{text-decoration:none;}
+			li{list-style:none;}
+			img{border:0px;}
+			
+			.w980{width:980px;margin:0px auto;}
+			.qc{clear:both;}
+			.mt10{margin-top:10px;}
+			.x10{margin-bottom:10px;}
+			
+			.pg_Header{height:68px;background:#ddd;}
+			.pg_Header ul{text-align:center;height:36px;line-height:36px;background:url(images/top_1.gif);}
+			.pg_Header ul li{color:#fff;display:inline;padding:0px 10px;}
+			.pg_Header ul li a{color:#fff;font-size:16px;font-weight:bold;}
+			
+			.pg_Header div{height:32px;line-height:32px;background:url(images/top_2.gif);}
+			.pg_Header div span{color:#fff;margin:0px 40px;}
+			.pg_Header div form{display:inline;color:#fff;}
+			.pg_Header div form a{color:#fff;}
+			.pg_Header div p{float:right;margin-top:4px;margin-right:20px;line-height:24px;background:url(images/d3.jpg);width:305px;height:24px;}
+			.pg_Header div p a{float:left;}
+			.pg_Header div p .a1{margin-left:30px;width:150px;}
+			.pg_Header div p .a2{}
+			.pg_Header div p .a3{margin-left:30px;}
+			
+			.pg_Center{}
+			.pg_Center .ct_left{width:195px;float:left;}
+			.pg_Center .ct_center{width:570px;float:left;margin:0px 10px;}
+			.pg_Center .ct_right{width:195px;float:left;}
+
+
+			.common{}
+			.common .bt{text-align:center;color:#fff;font-size:14px;line-height:28px;height:30px;background:url(images/la_4.gif);}
+			.common .ct{padding:10px;border:1px solid red;border-top:0px;}
+			
+			.ct_left .left-1{}
+			.ct_left .left-1 h4{}
+			.ct_left .left-1 div{}
+			.ct_left .left-1 div ul{}
+			.ct_left .left-1 div ul li{background:url(images/qqonline.gif) no-repeat left center;padding-left:21px;line-height:25px;}
+			.ct_left .left-1 div ul li a{}
+			
+			.ct_left .left-2 .hz{color:red;font-size:14px;font-weight:bold;line-height:25px;background:url(images/dot.gif) no-repeat left center;padding-left:10px;}
+			.ct_left .left-2 .xyou{border-bottom:dashed 1px #B8B8B8;padding-bottom:5px;margin-bottom:5px;}
+			.ct_left .left-2 .you{text-align:right;font-size:14px;margin-right:5px;margin-left:50px}
+			.ct_left .left-2 .you1{font-size:14px;margin-left:5px}
+			.ct_left .left-2 .you2{text-align:right;font-size:14px;margin-right:5px;margin-left:57px}
+			.ct_left .left-2 .you3{text-align:right;font-size:14px;margin-right:5px;margin-left:36px}
+			.ct_left .left-2 .you4{text-align:right;font-size:14px;margin-right:5px;margin-left:22px}
+			
+			.ct_left .left-3 img{width:80px;height:50px;border:1px solid #C4C4C4;margin-bottom:5px}
+			.ct_left .left-4 img{width:170px;height:70px;border:1px solid #C4C4C4;margin-bottom:10px}
+			
+			
+			.ct_center .bt{background:url(images/ca_2.gif);height:31px;line-height:31px;}
+			.ct_center .bt h4{color:#fff;margin-left:20px;}
+			.ct_center .bt img{float:right;margin-top:12px;margin-right:15px;}
+			
+			.ct_center .zdbk{width:570px;height:300px}
+			.ct_center .z1dbk{width:570px;height:150px;}
+			.ct_center .dn {width:100px;height:150px;float:left;margin-left:10px;}
+			.ct_center .dn img{width:100px;height:100px}
+			.ct_center .dn span{font-weight:bold;color:#f00;}
+			
+			.ct_right .right-1 ul li{line-height:25px;}
+			.ct_right .right-1 ul li .a1{background:url(images/qqonline.gif) no-repeat left center;padding-left:21px;line-height:25px;}
+			.ct_right .right-1 ul li .b1{background:url(images/ww.gif) no-repeat left center;padding-left:21px;line-height:25px;}
+			
+			
+			.ct_right .right-2{}
+			.ct_right .right-2 ul{}
+			.ct_right .right-2 ul li{line-height:25px;background:url(images/dot.gif) no-repeat left center;padding-left:10px;}
+			.ct_right .right-2 ul li a{}
+
+			.ct_right .right-3{}
+			.ct_right .right-3 ul{}
+			.ct_right .right-3 ul li{border-bottom:1px dashed #ddd;padding-bottom:10px;margin-bottom:10px;}
+			.ct_right .right-3 ul li:hover{background-color:#f1f1f1;}
+			.ct_right .right-3 ul li img{width:85px;float:left;margin-right:10px;}
+			.ct_right .right-3 ul li p{line-height:18px;}
+			.ct_right .right-3 ul li span{font-weight:bold;color:#f00;}
+
+			.pg_footer{height:200px;border:1px solid red;background:url(images/copy.gif) repeat-x;}
+			.pg_footer .zxmdkk{height:200px;width:100px;float:left;margin-left:80px}
+			.pg_footer .zxmdkk .hz{color:red;font-size:14px;font-weight:bold;line-height:50px;}
+			.pg_footer .zxmdkk .xg{font-size:12px;padding-left:10px;line-height:25px;background:url(images/dot.gif) no-repeat left center;}
+			
+			</style>
+							
+	  </head>
+	  <body>
+			<div class="w980 pg_Header">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li>|</li>
+						<li><a href="#">网页</a></li>
+						<li>|</li>
+						<li><a href="#">音乐</a></li>
+						<li>|</li>
+						<li><a href="#">视频</a></li>
+						<li>|</li>
+						<li><a href="#">电影</a></li>
+						<li>|</li>
+						<li><a href="#">联系</a></li>
+						<li>|</li>
+						<li><a href="#">新闻</a></li>
+						<li>|</li>
+						<li><a href="#">分类</a></li>					
+					</ul>
+					<div>
+				<p>
+					<a href="#" target="_blank" class="a1">共(0)件</a>
+					<a href="#" target="_blank" class="a2">去结算</a>
+					<a href="#" target="_blank" class="a3">用户中心</a>
+				</p>
+				<span>2020年03月31日 12：00</span>			
+				<form>
+					搜索
+					<select>
+						<option>IT</option>
+						<option>金融</option>
+						<option>财务</option>
+					</select>
+					<input type="text" />
+					<input type="submit" value="搜索" />
+					<a href="#" target="_blank">高级</a>
+					/
+					<a href="#" target="_blank">组合搜索</a>
+				</form>
+					</div>
+			</div>
+			<div class="w980 mt10 pg_Center">
+				<div class="ct_left">
+					<div class="common left-1">
+					<h4 class="bt">用户中心</h4>
+						<div class="ct">
+						<ul>
+							<li><a href="#">注册/登录</a></li>
+							<li><a href="#">购物车</a></li>
+							<li><a href="#">对比框</a></li>
+						</ul>
+						</div>
+					</div>
+				
+					<div class="common mt10 left-2">
+					<h4 class="bt">商品分类</h4>
+						<div class="ct">
+							<ul>
+								<li><a class="hz" href="#">电脑配件</a></li>
+								<div class="xyou"><a class="you2" href="#"> CPU</a><span>|</span><a class="you1" href="#">主板</a></div>
+								<div class="xyou"><a class="you" href="#">耳机</a><span>|</span><a class="you1" href="#">主板</a></div>
+								<div class="xyou"><a class="you" href="#">内存</a><span>|</span><a class="you1" href="#">移动应聘</a></div>
+								<div class="xyou"><a class="you3" href="#">笔记本</a><span>|</span><a class="you1" href="#">主板</a></div>
+								<div class="xyou"><a class="you2" href="#"> CPU</a><span>|</span><a class="you1" href="#">主板</a></div>
+								<div class="xyou"><a class="you2" href="#"> CPU</a><span>|</span><a class="you1" href="#">主板</a></div>
+								
+								<li><a class="hz" href="#">办公设备</a></li>
+
+								<li><a class="hz" href="#">手机数码</a></li>
+								<div class="xyou"><a class="you4" href="#">手机数码</a><span>|</span></div>
+								<li><a class="hz" href="#">电脑整机</a></li>
+								<div class="xyou"><a class="you3" href="#">笔记本</a><span>|</span></div>
+							</ul>
+						</div>
+					
+					</div>
+					
+					<div class="common mt10 left-3">
+					<h4 class="bt">推荐品牌</h4>
+						<div class="ct">
+						<img src="images/001.gif" />
+						<img src="images/002.gif" />
+						<img src="images/003.jpg" />
+						<img src="images/004.jpg" />
+						<img src="images/005.jpg" />
+						<img src="images/006.jpg" />
+						<img src="images/007.jpg" />
+						<img src="images/008.gif" />
+						<img src="images/009.jpg" />
+						<img src="images/010.jpg" />
+						</div>
+						
+					
+					</div>
+					<div class="common mt10 left-4">
+					<h4 class="bt">合作伙伴</h4>
+						<div class="ct">
+						<img src="images/001.gif" />
+						<img src="images/002.gif" />
+						<img src="images/003.jpg" />
+						<img src="images/004.jpg" />
+						</div>
+					</div>
+				</div>	
+				
+				
+				
+				
+				
+																																																								
+				<div class="ct_center">
+				<a href="#"><img src="images/012.jpg" width="570" /></a>
+					<div class="mt10 bt x10">
+						<a href="#" target="_blank"><img src="images/more.gif" /></a>
+						<h4>推荐商品</h4>
+					</div>
+					
+					<div class="zdbk">
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					</div>
+					<div class="mt10 bt x10">
+						<a href="#" target="_blank"><img src="images/more.gif" /></a>
+						<h4>特价商品</h4>
+					</div>
+					
+					<div class="z1dbk">
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					</div>
+					
+					<div class="mt10 bt x10">
+						<a href="#" target="_blank"><img src="images/more.gif" /></a>
+						<h4>最新商品</h4>
+					</div>
+					<div class="zdbk">
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					<div class="dn">
+							<a href="#">
+									<img src="images/013.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+							</a>
+					</div>
+					</div>
+					
+					
+					
+					
+				</div>
+				
+				
+																																				
+				<div class="ct_right">				
+					<div class="common right-1">
+						<h4 class="bt">客户服务</h4>
+						<div class="ct">
+						<ul>
+							<li>电话：15917934491</li>
+							<li>邮箱：1610013731@qq.com</li>
+							<li>传真：0753-3327389</li>
+						</ul>
+						<ul>
+							<li><a class="a1"href="#">客户1</a></li>
+							<li><a class="a1"href="#">客户2</a></li>
+							<li><a class="a1"href="#">客户3</a></li>
+						</ul>
+						<ul>
+							<li><a class="b1"href="#">客服1</a></li>
+							<li><a class="b1"href="#">客服2</a></li>
+						</ul>
+						</div>
+					</div>
+					<div class="common mt10 right-2">
+						<h4 class="bt">网站新闻</h4>
+						<div class="ct">
+						<ul>
+							<li><a href="#">我们在武汉武汉地铁开往</a></li>
+							<li><a href="#">从抗击疫病的历史中慧</a></li>
+							<li><a href="#">国际货币基金组织中恢复</a></li>
+							<li><a href="#">的生像注册/登录</a></li>
+							<li><a href="#">今天的生像梦里梦到样甜</a></li>
+							<li><a href="#">对的生像比框</a></li>
+						</ul>
+						</div>
+					</div>
+					
+					<div class="common mt10 right-3">
+					<h4 class="bt">网站分类商品</h4>
+					<div class="ct">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>									
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/011.jpg" />
+									<p>冠捷（AOC）21.5寸宽屏器送卡通器</p>
+									<span>$999.99</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+					
+				</div>
+				<p class="qc"></p>
+			</div>	
+			
+			
+				<div class="w980 mt10 pg_footer">
+					<div class="zxmdkk">
+							<ul>
+								<li><a class="hz" href="#">关于我们</a></li>
+								<li class="xg">公司介绍</li>
+								<li class="xg">发展历程</li>
+								<li class="xg">联系我们</li>
+							</ul>
+					</div>
+					<div class="zxmdkk">
+							<ul>
+								<li><a class="hz" href="#">付款方式</a></li>
+								<li class="xg">在线支付</li>
+								
+							</ul>
+						
+					</div>
+					<div class="zxmdkk">
+							<ul>
+								<li><a class="hz" href="#">送货方式</a></li>
+								<li class="xg">EMS快递</li>
+								<li class="xg">快递运输</li>
+								
+							</ul>
+					</div>
+					<div class="zxmdkk">
+							<ul>
+								<li><a class="hz" href="#">售后服务</a></li>
+								<li class="xg">退换货政策</li>
+								<li class="xg">服务承诺</li>
+								<li class="xg">特殊说明</li>
+							</ul>
+					</div>
+					<div class="zxmdkk">
+							<ul>
+								<li><a class="hz" href="#">购物帮助</a></li>
+								<li class="xg">常见问题</li>
+								
+							</ul>
+					</div>
+				
+				
+				</div>			
+	  </body>
+</html>

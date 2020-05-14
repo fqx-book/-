@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p style="font-size: 100px;" id="content">我是一个普通的段落</p>
+		<button id="btn1">变蓝</button>
+		<button id="btn2">变绿</button>
+	</body>
+	<script type="text/javascript">
+		
+	
+		//通过id来查找元素----getElementById
+			let duanLuo=document.getElementById("content");
+			let anNiu1=document.getElementById("btn1");
+			let anNiu2=document.getElementById("btn2");
+			
+			anNiu1.addEventListener("click",function(){
+		    content.style.color = "blue";
+		})
+			anNiu2.addEventListener("click",function(){
+			content.style.color = "green"
+			})
+			
+		//通过标签名来查找元素，返回的是一个数组----getElementsByTagName
+		/*
+			let btns = document.getElementsByTagName("button");
+			btns[0].addEventListener("click",function(){
+			    content.style.color = "blue";
+			})
+			
+			btns[1].addEventListener("click",function(){
+			    content.style.color = "green";
+			})
+			console.log(content);*/
+			
+		//使用querySelector来查找，class用点，id用#
+		/*let blueBtn = document.querySelector("#btn1");
+		let greenBtn = document.querySelector("#btn2");
+		blueBtn.addEventListener("click",function(){
+		    content.style.color = "blue";
+		})
+		greenBtn.addEventListener("click",function(){
+		    content.style.color = "green";
+		})*/
+		
+		//使用querySelectorAll来查找
+		/*let btns = document.querySelectorAll("button");
+		btns[0].addEventListener("click",function(){
+		    content.style.color = "blue";
+		})
+		
+		btns[1].addEventListener("click",function(){
+		    content.style.color = "green";
+		})
+		console.log(content);*/
+	</script>
+	
+</html>

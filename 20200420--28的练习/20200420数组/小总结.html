@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数组小总结</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		//构建数组的方式
+		let team=['唐僧','猪八戒','沙僧','孙悟空'];
+		console.log(team.length);
+		
+		let team1=new Array('唐僧','猪八戒','沙僧','孙悟空')
+		console.log(team1)
+		
+		//获取索引3上的元素
+		let swk=team[3];
+		console.log(swk);
+		
+		//forEach
+		team.forEach(function(item,index,arr){
+			console.log("名字:"+item+",索引:"+index);
+			console.log(arr)
+		}
+		)
+		
+		
+		//push（）  在数组的末尾增加一个或者多个元素
+		team.push("白龙马");
+		console.log(team);
+		
+		//pop（）  删除数组中的最后一个元素
+		team.pop();
+		console.log(team);
+		
+		//shift  删除数组中的第一个元素
+		team.shift();
+		console.log(team);
+		
+		//unshift 在数组的开头增加一个或者多个元素
+		team.unshift("白骨精","金角大王")
+		console.log(team);
+		
+		//indexOf查找一个元素中第一次出现的位置，如果没有则会返回-1
+		//lastIndexOf查找数组中的最后一个元素
+		console.log(team.indexOf("金角大王"));
+		
+		//splice在任意位置给数组添加或者删除元素  
+		//例：数组名.splice（开始位置的索引，删除的个数，增加的元素）
+		team.splice(0,2,"银角大王");
+		console.log(team);
+		
+		//slice()，用来复制数组或者截取数组中一部分
+		//复制
+		let team2=team.slice();
+		console.log(team2);
+		//截取一部分slice（开始位置的索引，结束位置的索引）顾前不顾后
+		let team3=team.slice(0,2);
+		console.log(team3);
+		
+		
+		//concat() 用来合并两个或者多个数组
+		let num1=['a','b'];let num2=['c','d']
+		let num3=num1.concat(num2);
+		
+		//join（）连接索引数组元素组成一个字符串
+		let zimu=['a','b','c'];
+		let newzimu=zimu.join('-');
+		console.log(newzimu);
+		
+		//sort()用来对数组元素进行排序
+		let number = [1, 2, 7, 4, 9, 6, 8, 3, 10, 5];
+		// 调用 sort 方法 升序排序
+		number.sort(function (a, b) {
+		    return a - b;
+		});
+		console.log(number);
+		// 降序
+		number.sort(function (a, b) {
+		    return b - a;
+		});
+		console.log(number);
+		
+		//二维函数
+		let two=[
+			['a','b','c','d'],
+			['e','f','g','h']
+		]
+		//输出b
+		console.log(two[0][1]);
+		
+		
+		//一维数组的打印
+		//用数组将一组值以表格形式显示
+		let values = [];
+		for (var x = 0; x < 10; x++) {
+		    // 往 values 里面 push
+		    values.push([
+		        2 * x,
+		        2 * x * 2
+		    ])
+		};
+		// 作用 跟 console.log 等价
+		console.table(values)
+	</script>
+</html>

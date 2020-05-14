@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn1"class="ck">增加一个Hi属性</button>
+		<button id="btn2">禁用这个按钮</button>
+		<button id="btn3">移除禁用</button>
+	</body>
+	<script type="text/javascript">
+		let anniu1=document.getElementById("btn1");
+		let anniu2=document.getElementById("btn2");
+		let anniu3=document.getElementById("btn3");
+		
+		
+		//setAttribute建立一个新的属性
+		anniu1.addEventListener("click",function(){
+        anniu1.setAttribute("name","Hi");
+    })
+	
+		anniu2.addEventListener("click",function(){
+		    anniu2.setAttribute("disabled","");
+		})
+		
+		//removeAttribute移除一个属性
+		anniu3.addEventListener("click",function(){
+		    anniu3.removeAttribute("disabled");
+		})
+		
+		//
+		let shuxing=anniu1.getAttribute("class");
+		console.log(shuxing);
+	</script>
+</html>

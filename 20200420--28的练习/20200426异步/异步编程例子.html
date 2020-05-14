@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			img{width: 500px;height: 500px;}
+		</style>
+	</head>
+	
+	<body>
+		<button id="btn1">单击按钮1</button>
+		<button id="btn2">双击按钮2</button>
+	</body>
+	<script type="text/javascript">
+		//获取按钮1，为按钮添加点击事件
+		document.getElementById("btn1").addEventListener("click",function(){
+			alert("哦豁")//弹出哦豁
+			let plam=document.createElement('p')//建立一个p标签
+			plam.innerText="嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻"//建立p标签的文本内容
+			document.body.appendChild(plam);//将p追加进body里面
+		})
+		
+		//获取按钮2，为按钮添加双击事件
+		document.getElementById("btn2").addEventListener("dblclick",function(){
+			alert("???????????")
+			let pic=document.createElement("img");
+			pic.src="img/4.jpg";
+			document.body.appendChild(pic);
+		})
+	</script>
+</html>

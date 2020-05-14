@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		let Me=new Object();
+		Me.name="何海峰";
+		Me.sex="男";
+		Me.age=22;
+		Me.nation="汉族";
+		Me.place="广东梅州"
+		Me.hobby="书法"
+		
+		Me.say=function(){
+			console.log("我是",this.name,
+			", 性别是",this.sex,
+			", 年龄是",this.age,
+			", 民族是",this.nation,
+			", 籍贯是",this.place,
+			", 我的爱好是",this.hobby,
+			"最近没什么有趣的事");
+		}
+		Me.say();
+	</script>
+</html>

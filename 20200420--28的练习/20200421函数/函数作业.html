@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		console.log(" 第一题：构建一个无参函数，执行函数后显示：身体健康真好：）")
+		function body(){
+			console.log("身体健康真好：）");
+		}
+		body();
+		
+		console.log(" 第二题：构建一个带参函数，执行函数后显示 参数1是否大于参数2的比较结果")
+		function number(num1,num2){
+			return num1>num2
+		}
+		let result=number(9,5);
+		console.log(result);
+		
+		console.log(" 第三题：  构建一个计算器函数：参数（计算法则，数字1，数字2）、构建一个计算平均值函数，在函数中执行  1.求和，2.求平均数，3.求每个数字与平均数的差")
+		function jisuan(rule,n1,n2){
+			 switch (rule) {
+            case '+':
+                return n1 + n2;
+                break;
+            case '-':
+                return n1 - n2;
+                break;
+            case '*':
+                return n1 * n2;
+                break;
+            case '/':
+                return n1 / n2;
+                break;
+        }
+    }
+		function average() {
+		let num3=6 ,num4=8;
+		let sum=jisuan('+',num3,num4)
+		console.log(sum);//求和
+		let pjs=jisuan('/',sum,2)
+		console.log(pjs);//平均数
+		let difference1=jisuan('-',num3,pjs);
+		let difference2=jisuan('-',num4,pjs);
+		console.log(difference1);
+		console.log(difference2);
+		}
+		average();
+		
+		console.log(" 第四题： 构建一个函数：参数（身高，体重，年龄）")
+        // 函数执行：如果年龄<18并且身高<170cm(&&)
+       // 或者(||)年龄<18并且体重<60kg则返回0(0为不合格)，
+       // 如果满足条件则返回1(1为合格)。
+        //并且根据返回值在页面上输出，条件合格/条件不合格
+		console.log(" 第五题：立即执行函数 ")
+		function information(height,weight,age){
+			if(height < 170 && age < 18 || age < 18 && weight < 60) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+		/*let result1 = information(160, 60, 17);
+		if (result1 == 0) {
+		    console.log('不合格');
+		} else {
+		    console.log('合格');
+		}*/
+		
+		
+		(function () {
+		    let result = information(160, 60, 17);
+		    if (result == 0) {
+		        console.log('不合格');
+		    } else {
+		        console.log('合格');
+		    }
+		})()
+		
+		console.log(" 第六题： 封装一个输入半径求圆的面积的函数 ");
+		function circle(r){
+		    return Math.PI * r * r;
+		}
+		let reuslt3 = circle(3);
+		console.log("圆的面积是:",reuslt3);
+		
+		console.log(" 第七题： 封装一个显示时间的函数，显示当前时间 ,如`2020-04-15 12:12:12` ");
+		function getDate() {
+		    let date = new Date();
+		    let year = date.getFullYear();
+		    let month = date.getMonth() + 1;
+		    month = month >= 10 ? month : "0" + month;
+		    let day = date.getDate();
+		    day = day >= 10 ? day : "0" + day;
+		    let hour = date.getHours();
+		    hour = hour >= 10 ? hour : "0" + hour;
+		    let minute = date.getMinutes();
+		    minute = minute >= 10 ? minute : "0" + minute;
+		    let second = date.getSeconds();
+		    second = second >= 10 ? second : "0" + second;
+		    let result = year + "-" + month + "-" + day +
+		        " " + hour + ":" + minute + ":" + second;
+		    return result;
+		}
+		console.log(getDate());
+		
+		console.log(" 第八题： 取数组 [12,65,22,01,98,32,32] 中的最大值 的函数 ");
+		let numb= [12,65,22,01,98,32,32];
+		function zd(){
+			let max=0
+			for(let i=0;i<numb.length;i++){
+				let qud=numb[i];
+				if(max<qud){
+					max=qud
+			}
+		}
+				return max
+		}
+		console.log(zd())
+	</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ul">
+		
+		</ul>
+		 <button id="btn">替换</button>
+		 <button id="btn1">删除猪八戒</button>
+		 <button id="btn2">增加白骨精</button>
+	</body>
+	<script type="text/javascript">
+		//通过 createElement 方法来实现
+		/*let team=["唐僧","猪八戒","孙悟空","沙僧"]
+		let ul = document.getElementById("ul");
+		for (let i = 0; i < team.length; i++){
+			let li = document.createElement("li");
+			 li.innerText = team[i];
+			 ul.appendChild(li);
+			 }*/
+			 
+			 
+		//通过 createDocumentFragment 
+		/*let team=["唐僧","猪八戒","孙悟空","沙僧"]
+		let ul = document.getElementById("ul");
+		let frament = document.createDocumentFragment();
+		for (let i = 0; i < team.length; i++){
+			let li = document.createElement("li");
+			 li.innerText = team[i];
+			 frament.appendChild(li);
+			 }
+			ul.appendChild(frament);*/
+		//通过 createTextNode	
+		let team=["唐僧","猪八戒","孙悟空","沙僧"]
+		let ul = document.getElementById("ul");
+		let frament = document.createDocumentFragment();
+		for (let i = 0; i < team.length; i++){
+			let li = document.createElement("li");
+			 let text = document.createTextNode(team[i]);
+			 li.appendChild(text);
+			 frament.appendChild(li);
+			 }
+			ul.appendChild(frament);
+			
+		//追加元素
+		let li2 =document.createElement("li");
+		li2.innerText="白龙马";
+		ul.appendChild(li2)
+		
+		//替换元素
+		let long=document.getElementsByTagName("li")[4];
+		let li3 =document.createElement("li");
+		li3.innerText="牛魔王";
+		document.getElementById("btn").addEventListener("click",function(){
+		ul.replaceChild(li3,long);
+		})
+		
+		//克隆
+		let cloneDocument = document.cloneNode(true);
+		console.log(cloneDocument);
+		
+		//删除节点
+		document.getElementById("btn1").addEventListener("click",function(){
+		  let zhu=document.getElementsByTagName("li")[1];
+		  ul.removeChild(zhu);
+		})
+		
+		//插入元素
+		document.getElementById("btn2").addEventListener("click",function(){
+		let li4 =document.createElement("li");
+		 let zhu=document.getElementsByTagName("li")[1];
+		  li4.innerText="白骨精";
+		 ul.insertBefore(li4, zhu);
+		})
+	</script>
+</html>

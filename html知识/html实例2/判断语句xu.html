@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="number" /><button id="bta">查询奇偶数</button>
+		<br /><br />
+		<input id="score" /><button id="btb">查询成绩等级</button>
+		<br /><br />
+		
+		金币<input id="money" />
+		
+		积分<input id="integral" />
+		
+		次数<input id="buyCount" />
+		
+		<button id="buy">查询购买资格</button>
+	</body>
+	<script type="text/javascript">
+		document.getElementById('bta').onclick=function(){
+		var inputVal = document.getElementById('number').value;
+		var result = inputVal%2;
+		if(result ==0){
+				alert('你输入的是   偶数');
+			}else if(result ==1){ 				
+				alert('你输入的是   奇数');
+			}
+			 else{
+				 alert("输入错误");
+			 }
+		}
+	</script>
+	<script type="text/javascript">
+		document.getElementById('btb').onclick=function(){
+		var inputVal = document.getElementById('score').value;
+		if(inputVal<60 && inputVal>=0){
+			alert("成绩不合格")
+		}else if(inputVal>=60 && inputVal<70){
+			alert("及格")
+		}else if(inputVal>=70 && inputVal<80){
+			alert("中")
+		}else if(inputVal>=80 && inputVal<90){
+			alert("良")
+		}else if(inputVal>=90 && inputVal<=100){
+			alert("优")
+		}else{
+			alert("输入错误")
+		}
+		
+		}
+		
+		document.getElementById('buy').onclick=function(){
+			var inputVala = document.getElementById('money').value;
+			
+			var inputValb = document.getElementById('integral').value;
+			
+			var inputValc = document.getElementById('buyCount').value;
+			if(inputVala>=10 ||inputValb > 50 || inputValc >= 200){
+				alert("能够购买");
+			}else{
+				alert("您没有购买资格");
+			}
+		}
+	</script>
+</html>

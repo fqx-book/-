@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button id="btn1">将吃鸡放到所有城市后面</button>
+        <button id="btn2">将吃鸡放到所有城市前面</button>
+        <button id="btn3">将吃鸡放到上海的后面</button>
+        <button id="btn4">将吃鸡放到上海的前面</button>
+        <button id="btn5">删除北京</button>
+        <button id="btn6">删除所有节点</button>
+    </div>
+    <ul id="top">
+        <li id="beijing">北京</li>
+        <li id="shanghai">上海</li>
+        <li id="zhengzhou">郑州</li>
+        <li id="chiji">吃鸡</li>
+        <li id="wangzherongyao">望着荣耀</li>
+
+    </ul>
+</body>
+<script type="text/javascript">
+	
+	let ji=document.getElementById("chiji");//获取吃鸡
+	let ul=document.getElementById("top");//获取到ul（父节点）
+	
+	   
+	   
+	//将吃鸡放到所有城市后面
+	document.getElementById("btn1").addEventListener("click",function(){
+	 ul.removeChild(ji);
+	   ul.appendChild(ji);
+	})
+		
+	//将吃鸡放到所有城市前面
+	document.getElementById("btn2").addEventListener("click",function(){
+	 ul.removeChild(ji);
+	     ul.insertBefore(ji, ul.firstChild);
+	  })
+	  
+	  
+	//将吃鸡放到上海的后面
+	document.getElementById("btn3").addEventListener("click",function(){
+	   ul.removeChild(ji);
+	   let zhengzhou=document.getElementById("zhengzhou");
+	       ul.insertBefore(ji,zhengzhou);
+	    })
+		
+	//将吃鸡放到上海的前面
+	document.getElementById("btn4").addEventListener("click",function(){
+	   ul.removeChild(ji);
+	   let shanghai=document.getElementById("shanghai");
+	       ul.insertBefore(ji,shanghai);
+	    })
+		
+	//删除北京
+	document.getElementById("btn5").addEventListener("click",function(){
+	   let beijing=document.getElementById("beijing");
+	    ul.removeChild(beijing);
+	    })
+		
+	//删除所有节点
+	document.getElementById("btn6").addEventListener("click",function(){
+	    body.removeChild(ul);
+		let button = document.getElementsByTagName('button');
+		for (let i = 0; i < button.length; i++) {
+		    // 给所有按钮 设置 不能点击的属性
+		    button[i].setAttribute('disabled', '');
+		}
+	    })
+		
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn1">开启定时器</button>
+		<button id="btn2">取消定时器</button>
+	</body>
+	<script type="text/javascript">
+		/*
+		例子1:按下第一个按钮会设置一个定时器，
+		定时器在 2s 后输出信息,"有毒"
+		，按下第二个按钮可以取消定时器
+		 */
+		// setTimeout(回调函数，事件（以毫秒为计算），参数列表)
+		// setTimeout 执行后会返回一个定时器的ID
+		let timeID;
+		document.getElementById("btn1").addEventListener("click",function(){
+			timeID = setTimeout(function(n1,n2){
+				alert("有毒");
+				console.log(n1,n2);
+			},2000,"哈喽","恩？");
+		})
+		
+		//取消定时器clearTimeout(timeID)
+		document.getElementById("btn2").addEventListener("click",function(){
+			console.log("取消定时器");
+			clearTimeout(timeID);
+		})
+	</script>
+</html>

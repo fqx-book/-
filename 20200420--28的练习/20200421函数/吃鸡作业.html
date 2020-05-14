@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style type="text/css">
+		.hide{
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+    <div>
+        <button id="btn1">将吃鸡放到所有城市后面</button>
+        <button id="btn2">将吃鸡放到所有城市前面</button>
+        <button id="btn3">将吃鸡放到上海的后面</button>
+        <button id="btn4">将吃鸡放到上海的前面</button>
+        <button id="btn5">删除北京</button>
+        <button id="btn6">删除所有节点</button>
+    </div>
+    <ul>
+        <li id="beijing"class=" ">北京</li>
+        <li id="shanghai"class=" ">上海</li>
+        <li id="zhengzhou"class=" ">郑州</li>
+        <li id="chiji"class=" ">吃鸡</li>
+        <li id="wangzherongyao"class=" ">望着荣耀</li>
+
+    </ul>
+</body>
+<script type="text/javascript">
+	
+	//删除北京
+	document.getElementById('btn5').onclick = function(){
+		let bTag = document.getElementById("beijing");
+		let classList = bTag.className;
+		bTag.className = classList.replace(' ','hide');
+		}
+	
+	//删除所有节点
+	document.getElementById('btn6').onclick = function(){
+		let bTag5 = document.getElementById("beijing");
+		let classList5 = bTag5.className;
+		bTag5.className = classList5.replace(' ','hide');
+		
+		
+		let bTag1 = document.getElementById("shanghai");
+		let classList1 = bTag1.className;
+		bTag1.className = classList1.replace(' ','hide');
+		
+		
+		let bTag2 = document.getElementById("zhengzhou");
+		let classList2 = bTag2.className;
+		bTag2.className = classList2.replace(' ','hide');
+		
+		
+		let bTag3 = document.getElementById("chiji");
+		let classList3 = bTag3.className;
+		bTag3.className = classList3.replace(' ','hide');
+		
+		
+		let bTag4 = document.getElementById("wangzherongyao");
+		let classList4 = bTag4.className;
+		bTag4.className = classList4.replace(' ','hide');
+		}
+	
+
+</script>
+</html>

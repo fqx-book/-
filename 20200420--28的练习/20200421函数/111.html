@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="parentElement">
+		   <span id="childElement">foo bar</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var newNode = document.createElement("span");
+		var parentDiv = document.getElementById("childElement").parentNode;
+		var sp2 = document.getElementById("childElement");
+		parentDiv.insertBefore(newNode, sp2);
+	</script>
+</html>

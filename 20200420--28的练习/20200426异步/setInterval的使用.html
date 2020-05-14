@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn1">取消定时器</button>
+	</body>
+	<script type="text/javascript">
+		/*
+		    setInterval 的基本使用 重复执行的
+		    timeID = setInterval(回调函数,时间，参数列表)
+		 */
+		function dingshi(a,b){
+			console.log("这是一个工具人");
+			console.log(a,b);
+		}
+		let timeID=setInterval(dingshi,1000,"旭","xu");
+		document.getElementById("btn1").addEventListener("click",function(){
+			clearInterval(timeID);
+		})
+	</script>
+</html>

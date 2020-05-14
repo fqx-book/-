@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		
+	
+	/* 获取localstorage使用量 */
+	let test_str = "1234567890";
+	// 增加到 10KB
+	function add(str) {
+	    str += str;
+	    if (str.length > 10240) {
+	        test_str = str;
+	        return;
+	    }
+	    add(str)
+	}
+	add(test_str);
+	console.log(test_str);
+	// 设置一个定时器 动态添加数据
+	let sum = test_str;
+	let timeId = setInterval(function () {
+	    try {
+	        // 动态添加内容到 localstorage 中
+	        sum += sum;
+	        localStorage.removeItem("sum", sum);
+	        localStorage.setItem("sum", sum);
+	    } catch (error) {
+	        
+	        console.log(sum.length/1024,"KB");
+	        // 清除定时器
+	        clearInterval(timeId);
+	    }
+	}, 0.1)
+	</script>
+</html>

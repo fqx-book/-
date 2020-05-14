@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        a{
+            text-decoration:none;
+        }
+        body{
+            background:url(img/07.jpg) no-repeat  left;
+        }
+        .box{
+            width:346px;
+            height:400px;
+            background-color:#fff;
+            margin:0px 600px;
+            margin-top:20px;
+            /* border:1px solid red; */
+        }
+        .top p{
+            color:#999;
+            font-size:12px;
+            height:38px;
+            line-height:38px;
+            background:url("img/01.png") no-repeat 20px 12px #fff8f0;
+            text-align:center;
+        }
+        .denglu{
+            border-bottom:1px solid #f4f4f4;
+        }
+        .denglu a{
+            font-size:18px;
+            display:block;
+            line-height:18px;
+            float:left;
+            margin:18px 0px;
+            
+        }
+        .denglu-1{
+            width:120px;
+            color:#666666;
+            padding-left:38px;
+            border-right:1px solid #f4f4f4;
+
+        }
+        .denglu-2{
+            width:135px;
+            color:#e4393c;
+            font-weight:700;
+            padding-left:50px;
+            
+        }
+        .input{
+            width:306px;
+            height:223px;
+            margin:0px 20px;
+            /* border:1px solid red; */
+        }
+        .input input[type="text"]{
+            width:244px;
+            height:38px;
+            color:#999;
+            font-size:14px;
+            background:url(img/02.png) no-repeat left;
+            margin-top:32px;
+            padding-left:60px;
+            border:1px solid #bdbdbd;
+        }
+        .input input[type="password"]{
+            width:244px;
+            height:38px;
+            background:url(img/03.png) no-repeat left;
+            margin:18px 0px;
+            padding-left:60px;
+            border:1px solid #bdbdbd;
+        }
+        .input p{
+            text-align:right;
+        }
+
+        .input a{
+            color:#666;
+            font-size:12px;
+            
+        }
+        .input input[type="button"]{
+            width:306px;
+            height:33px;
+            color:#fff;
+            font-size:20px;
+            background-color:#e4393c;
+            border:1px solid #e85356;
+            margin-top:20px;
+            cursor:pointer;
+        }
+        .bottom{
+            width:346px;
+            height:50px;
+            line-height:50px;
+            /* margin-left:17px; */
+            margin-top:30px;
+            background-color:#fafafa;
+            border-top:1px solid #f4f4f4;
+        }
+        .bottom .btm-1,.bottom .btm-2{
+            color:#666;
+            font-size:12px;
+            display:inline-block;
+
+        }
+        .bottom .btm-1{
+            background:url(img/04.png) no-repeat left;
+            padding-left:30px;
+            margin-left:15px;
+        }
+        .line{
+            color:#ccc;
+            font-size:12px;
+            padding:0px 5px;
+        }
+        .bottom .btm-2{
+            background:url(img/05.png) no-repeat left;
+            padding-left:30px;
+        }
+        .bottom .btm-3{
+            color:#b61d1d;
+            font-size:14px;
+            display:inline-block;
+            background:url(img/06.png) no-repeat left;
+            padding-left:30px;
+            margin-left:93px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+        </div>
+        <div class="denglu">
+                <a class="denglu-1" href="#">扫码登录</a>
+                <a class="denglu-2" href="#">账户登录</a>
+            <div style="clear:both"></div>
+            
+        </div>
+        <div class="input">
+            <input id="username" type="text" placeholder="邮箱/用户名/登录手机" >
+            <input type="password" id="password" placeholder="密码">
+            <p><a href="#">忘记密码</a></p>
+            <input type="button" id="login" value="登&emsp;录">
+        </div>
+        
+        
+        <div class="bottom">
+            <a class="btm-1" href="#">QQ</a>
+            <span class="line">|</span>
+            <a class="btm-2" href="#">微信</a>
+            <a class="btm-3" href="#">立即注册</a>
+            
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('login').addEventListener('click',function(){
+        let username=document.getElementById('username').value;
+        let password=document.getElementById('password').value;
+        //保存用户名输入的值
+        localStorage.setItem('username',username);
+        //保存密码输入的值
+        localStorage.setItem('password',password);
+    });
+    window.onload=function(){
+        //获取用户名输入的值
+        document.getElementById('username').value=localStorage.getItem('username');
+        //获取密码输入的值
+        document.getElementById('password').value=localStorage.getItem('password');
+    }
+    
+</script>
+</html>

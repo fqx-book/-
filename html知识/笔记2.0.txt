@@ -1,0 +1,207 @@
+
+
+静态软件开发  界面
+
+网页-------文件----------浏览器 
+
+	1.创建文本文档  txt 直接修改成 html
+	2.编程	
+
+网页：标签组成的
+
+标签：成双成对的
+	<标签名></标签名>
+	<标签名 />
+
+	父 子：单独占一行,缩进：8个空格
+
+属性： 开始标签名的后面，要用空格隔开
+ 	属性名="值"
+
+	<标签名 属性名="值"></标签名>
+
+===============声明网页结构====================
+<html>
+	<head>
+		<title>标题</title>
+	</head>
+	<body>
+		内容
+	</body>
+</html>
+
+===============基本标签====================
+
+	标题标签	6个级别
+		<h1></h1>
+		<h2></h2>
+		<h3></h3>
+		<h4></h4>
+		<h5></h5>
+		<h6></h6>
+
+	段落标签	
+		 <p></p>
+
+	超链接标签
+		<a href="网址" target="_blank">内容</a>
+
+	图片标签
+		<img src="图片的地址" width="宽度" height="高度" />
+		
+	强制换行标签
+		<br />
+
+===============列表标签====================
+	
+	无序列表
+	<ul>
+		<li></li>
+	</ul>
+	有序列表
+	<ol>
+		<li></li>
+	</ol>
+	
+
+
+===============表单标签====================
+
+	作用：获取用户的输入
+
+	1.必须用form标签包着
+		<form></form>
+
+	2.元素
+		文本框  <input type="text" />
+		密码框  <input type="password" />
+		单选框	<input type="radio" name="分组" />
+		复选框  <input type="checkbox" />
+		按钮    <input type="submit" value="按钮上的字" />
+		下拉框   
+			<select>
+				<option>选项</option>
+			</select>
+		多行文本框
+			<textarea></textarea>  
+ 
+
+===============表格标签====================
+
+	作用：规范整齐的展示数据
+	表格 table
+	行 tr
+	列 td
+
+边框 border
+边框颜色 bordercolor
+
+对齐
+	align
+		left左边
+		center中间
+		right右边
+
+行合并 rowspan
+列合并 colspan
+
+<table border="1" bordercolor="red" align="center">
+	<tr>
+		<td></td>
+	</tr>
+</table>
+
+
+
+===============样式====================
+
+	界面 =  结构 + 样式
+
+
+标签
+	<标签名></标签名>
+	<标签名 />
+
+
+属性
+	属性名="值"
+
+样式
+	样式名:值;
+
+样式：放在style属性里面的
+	style="样式"
+
+样式与结构混合
+	代码量大 维护成本高 阅读性差
+
+样式与结构分离
+	<style>
+
+		标签名{}		标签选择器，范围大
+		#id名{}			id选择器, 范围小 id唯一标识
+		.类名{}			类选择器, 哪里需要直接挂class
+		父选择器 子选择器{}	后代选择器，取范围
+	</style>
+
+
+
+
+
+=========================字体=================================
+	color:red;			字体颜色
+	font-size:12px;			字体大小
+	font-weight:bold | normal;	字体是否加粗
+	font-family:微软雅黑 | 楷体;	字体类型
+
+
+=========================文本=================================
+
+	text-align:left | center | right;	文本对齐方式
+	text-decoration:none | underline;	文本修饰是否下划线
+	text-indent:30px;			段落首行缩进
+	line-height:30px;			每行文字的高度
+
+=========================边框=================================
+
+	单独控制一条边框
+	border-left:粗细 形状 颜色;
+	border-right:2px solid red;
+	border-top:2px blue dashed;
+	border-bottom:dotted 2px red;
+
+	直接控制四条边框
+	border:形状 颜色 粗细;
+
+=========================背景=================================
+
+	background-color:#ddd;
+
+
+li{}
+li:hover{}
+
+
+
+
+margin-left:
+margin-right:
+margin-top:
+margin-bottom:
+
+margin:上 右 下 左;
+margin:上下 左右;
+margin:上下左右;
+
+margin:1px 1px 1px 1px
+margin:1px;
+
+
+display的用法
+ 作用：css的元素显示上
+ inline 	将标签强制转换为内联标签
+ block 		将标签强制转换为块状标签
+ none 		将标签进行消除（不占html的位置）   opacity:0(完全消失)-1(完全显示); 透明度，即是完全消失了，也会占用html的位置  
+ inline-block 将标签强制转换为块状内联标签（既能设置长宽，但默认是水平排列，可以使用此属性代替 float:left;）
+			 
+
